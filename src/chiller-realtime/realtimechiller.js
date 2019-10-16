@@ -10,6 +10,7 @@ return(
          <div className="container-fluid">
              <div className="row">
                 <div className="px-0 col-lg-11">
+                 <div className="container-fluid">
                 <div className="d-flex pb-1">
                  <div style={{cursor:"pointer",color:`${Colors.text2}`}}>
                    Plant
@@ -25,6 +26,7 @@ return(
                   <ChillerTab/>
                   </div>
                   </div>
+                 </div>
                  </div>
                 </div>
              </div>

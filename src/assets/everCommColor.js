@@ -7,4 +7,4 @@ export const on = 'rgb(0,255,0)';
 export const contanierBg = 'rgb(32, 43, 96)';
 export const leftSideBar = 'rgb(40, 53, 115)';
 export const loginText = 'rgb(102, 102, 115)'
-export const FontAwsomeColor ='rgb(203,34,41)';
+export const FontAwsomeColor ='rgb(14,184,1)';

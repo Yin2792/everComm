@@ -1,38 +1,32 @@
 import React from 'react'
 import * as Colors from '../assets/everCommColor'
-const ButtonStyle=()=>{
-  return {
-    outline:"none",
-    color:"red",
-    boxShadow:"none",
-    borderTop:"none",
-    borderRight:"none",
-    borderBottom:"1px solid rgb(31,169,255)",
-    borderLeft:"none",
-    borderImage:"initial",
-    borderRadius:"0px",
-    color:`${Colors.text1}`
-  }
-}
+import Button from './button'
+import ChillerEfficiency from './chillerefficiency'
 const ChillerTab=() =>{
     return(
+      <div>
   <div className="row align-items-center">
-    <div className="col-sm-3 pl-3 pr-0">
+    <div className="col-sm-4 pl-3 pr-0">
         <div className="d-flex align-items-center" style={{fontSize:"20px"}}>
            <b className="px-0" style={{color:`${Colors.text1}`}}>Chiller</b>
-           <i className="fas fa-circle px-1" style={{color:`${Colors.FontAwsomeColor}`,fontSize:"12px"}}></i>
+           <i className="fa fa-circle px-1" style={{color:`${Colors.FontAwsomeColor}`,fontSize:"12px"}}></i>
+           <div className="ml-3 px-2 py-0 rounded" style={{cursor:"pointer",fontSize:"14px",color:`${Colors.text2}`,border:`1px solid ${Colors.text2}`}}>
+            Pump1
+           </div>
+
         </div>
     </div>
     <div className="col-sm-8 px-0 py-1">
-     <div className="d-flex d-flex-reverse">
-      <div>
-      <button type="button"
-       className="btn btn-sm mx-1"
-        style={ButtonStyle()} style={{bordrim}}><b>Real-time</b></button>
-      </div>
+     <div className="d-flex flex-row-reverse">
+      <Button/>
      </div>
     </div>
   </div>
+  <div>
+  <ChillerEfficiency/>
+  </div>
+  
+</div>
     )
 
 }
