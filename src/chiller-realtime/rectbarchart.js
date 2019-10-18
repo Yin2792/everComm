@@ -17,7 +17,7 @@ const RectBarChart =()=>{
 
         
         <ResponsiveContainer height={286}>
-        <BarChart width={600} height={300} data={data}
+        <BarChart width={600} height={300}
             margin={{top: 5, right: 30, left: 20, bottom: 5}}
            >
        <CartesianGrid stroke="#AAD0FD22" />
